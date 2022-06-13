@@ -1,5 +1,5 @@
 # nvim-lua
-
+[![nvim-lua.png](https://i.postimg.cc/rFT0tY09/nvim-lua.png)](https://postimg.cc/5jPNhgmH)
 ## Resources used
 
 ### Puglins
