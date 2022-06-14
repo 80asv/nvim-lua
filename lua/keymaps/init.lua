@@ -21,7 +21,8 @@ vim.g.mapleader = ' '
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
 -- bufer motion
-map('n', '<tab>', ':BufferNext<CR>', opts)
+map('n', '<A-right>', ':BufferNext<CR>', opts)
+map('n', '<A-left>', ':BufferPrevious<CR>', opts)
 map('n', '<C-q>', ':BufferClose<CR>', opts)
 
 -- panels motion
@@ -42,7 +43,13 @@ map('n', '<leader>tb', ':Telescope file_browser<CR>', opts)
 
 -- Block cursors
 map('n', '<up>', '<nop>', opts)
-map('n', '<down>', '<nop>', opts)
 map('n', '<left>', '<nop>', opts)
 map('n', '<right>', '<nop>', opts)
+map('n', '<down>', '<nop>', opts)
+
+-- move lines
+map('n', '<A-j>', ':move +1<CR>', opts)
+map('n', '<A-k>', ':move -2<CR>', opts)
+map('n', '<Tab>', ':le 4<CR>', opts)
+
 

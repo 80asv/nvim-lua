@@ -1,4 +1,4 @@
---      ___         ___           ___           ___           ___           ___     
+
 --     /  /\       /  /\         /  /\         /__/|         /  /\         /  /\    
 --    /  /::\     /  /::\       /  /:/        |  |:|        /  /:/_       /  /::\   
 --   /  /:/\:\   /  /:/\:\     /  /:/         |  |:|       /  /:/ /\     /  /:/\:\  
@@ -115,6 +115,26 @@ return require('packer').startup(function()
 
     -- Dashboard
     use 'glepnir/dashboard-nvim'
+    -- gps code
+    --
+    use {
+	    "SmiteshP/nvim-gps",
+	    requires = "nvim-treesitter/nvim-treesitter"
+    }
+
+    -- Comments
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
+    -- indent guides
+
+    use "lukas-reineke/indent-blankline.nvim"
+
+    use "Pocco81/AutoSave.nvim"
 end)
 
 
